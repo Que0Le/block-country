@@ -1,6 +1,6 @@
 #!/bin/bash
 # https://scottlinux.com/2013/08/30/block-geo-region-list-of-ips-with-ufw-in-linux/
-while read line; do sudo ufw deny from $line to any; done < test*.txt
+while read line; do sudo ufw delete deny from $line to any; done < test*.txt
 
 
 
